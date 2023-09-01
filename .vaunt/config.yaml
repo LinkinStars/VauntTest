@@ -36,3 +36,13 @@ achievements:
             actor: author
             action: issue
             condition: closed = true & labels in ['LGTM']
+  - achievement:
+      name: GoodMan
+      icon: https://raw.githubusercontent.com/vauntdev/example/main/.vaunt/closer.png
+      description: Awarded for starring our repository, make a wish!
+      triggers:
+        - trigger:
+            actor: author
+            action: issue
+            condition: closed = true & reason = COMPLETED
+
